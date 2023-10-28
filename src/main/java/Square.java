@@ -3,9 +3,24 @@ public class Square extends Shape{
     public Square(int s){
        this.s = s;
     }
-    void draw(){
+    String draw(){
         for(int i = 0; i< s;i++){
-            for(int j = )
+            if(i == 1){
+               for(int j = 0; j < s; j++){
+                   if(j == 1){
+                       System.out.print(" ");
+                   }else{
+                       System.out.print("*");
+                   }
+               }
+            }else{
+                for(int j = 0; j < s;j++){
+                    System.out.print("*");
+                }
+            }
+
+            System.out.println();
         }
+        return "";
     }
 }
